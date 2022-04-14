@@ -1,28 +1,28 @@
-# Adonis API application
+# Projeto Cardápio Online (Back-end)
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+## Configurações utilizadas
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
-
-## Setup
-
-Use the adonis command to install the blueprint
+### Instalação AdonisJS
 
 ```bash
-adonis new yardstick --api-only
+npm i -g @adonisjs/cli
+```
+#### Criando uma nova aplicação
+
+```bash
+adonis new "nome_da_aplicação" --api-only
+cd "nome_da_aplicação"
 ```
 
-or manually clone the repo and then run `npm install`.
+### Iniciando o Servidor
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+```bash
+adonis serve --dev
 ```
+
+### Instalação do banco de dados
+
+```bash
+npm install pg
+```
+
